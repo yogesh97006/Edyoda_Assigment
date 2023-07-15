@@ -1,23 +1,16 @@
-import logo from './logo.svg';
 import './App.css';
+import MainLeft from './main/MainLeft/MainLeft';
+import MainRight from './main/MainRight/MainRight';
+import Topbar from './topbar/Topbar';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Topbar />
+      <div style={{display:'flex',justifyContent:'space-between'}}>
+      <MainLeft />
+      <MainRight />
+      </div>
     </div>
   );
 }

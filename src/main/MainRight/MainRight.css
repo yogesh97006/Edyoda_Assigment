@@ -1,0 +1,149 @@
+.main__plan{
+    color: rgb(0, 0, 0);
+    margin-top: 15px;
+    margin-right: 102px;
+    background-color: white;
+    width:400px;
+    height:900px;
+    padding: 0 0 30px 0;
+}
+
+.plan__top{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.option{
+    padding: 8px 15px;
+    background-color: #0096FF;
+    border-radius: 50%;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+}
+
+.main__plan > h3 {
+    font-weight: 400;
+    text-align: center;
+}
+
+.all__plans{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(180, 175, 175);
+    border-radius: 4px;
+    background-color: #E7E7E7;
+    margin: 10px 20px;
+    height: 90px;
+}
+
+.first__part{
+    display: flex;
+    gap: 20px;
+}
+
+.duration__path{
+    margin-top: 0px;
+    margin-left: -15px;
+}
+
+.duration__path > p{
+    font-size: 15px;
+}
+
+.duration__path > span{
+    font-size: 13px;
+    margin-top: -2px;
+    padding: 2px;
+    border-radius: 2px;
+    font-weight: 600;
+    color: white;
+    background-color: red;
+}
+
+p > span{
+    font-size: 20px;
+}
+
+.radio__btn{
+    /* display: none; */
+    font-size: 8px;
+    display: flex;
+    align-items: center;
+    width: 20px;
+    height: 15px;
+    margin-top: 40px;
+    border-radius: 75%;
+    color: white;
+    background-color: rgb(106, 208, 106);
+}
+
+/* .duration__pathactive::after{
+    background-color: #D7EDDD;
+} */
+
+.all__activeplans{
+    display: flex;
+    justify-content: space-around;
+    border: 2px solid rgb(180, 175, 175);
+    border-radius: 4px;
+    background-color: #ffffff;
+    margin: 10px 20px;
+    height: 90px;
+}
+
+.all__checkbox::after{
+    background-color: green;
+}
+
+.icon__clock{
+    height: 25px;
+    background-color: red;
+
+}
+
+.info__plan{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px;
+}
+
+.offer__time{
+    display: flex;
+    color: rgb(215, 54, 54);
+    padding: 15px;
+    border: 1px solid red;
+    background-color: #F9DFD3;
+    margin: 8px;
+}
+
+.offer{
+    display: flex;
+    margin-top: -25px;
+    align-items: center;
+    gap: 10px;
+}
+
+.plans__btns{
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn__prop{
+    padding: 10px 20px;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.total__price{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 5px 0 5px;
+}
+
+.price--discount{
+    color: black;
+  margin-left: 100px; 
+}

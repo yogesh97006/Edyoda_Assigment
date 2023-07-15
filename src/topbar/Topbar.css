@@ -1,0 +1,53 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css");
+
+
+.topbar__components{
+    display: flex;
+    justify-content: space-between;
+    padding: 0 80px 0 80px;
+    color: rgb(0, 0, 0);
+    background-color: rgb(255, 255, 255);
+    border: 0.6px solid rgba(125, 125, 125, 0.686);
+}
+
+
+.topbar__leftcomponents{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.title__navbar{
+    background: linear-gradient(122deg, #0096FF 42.14%, #0048FF 96.70%);
+background-clip: text;
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.leftside__innerComponent{
+    display: flex;
+    margin:15px;
+    align-items: center;
+    column-gap: 5px;
+}
+
+
+.topbar__rightcomponents{
+    display: flex;
+   column-gap: 50px;
+}
+
+.right__icon{
+   padding-top: 30px;
+}
+
+.right__paragraph{
+   margin-top: 30px;
+}
+
+.topbar__btn{
+    margin:20px 40px;
+    border: 0;
+    padding: 10px 40px;
+    border-radius: 52px;
+background: linear-gradient(224deg, #0048FF 0%, #0096FF 100%);
+}
