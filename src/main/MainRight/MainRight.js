@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, {  useRef } from "react";
 import "./MainRight.css";
 import clock from '../../icons/icon clock.svg'
 import rozopay from '../../icons/Rozorpay.png'
@@ -6,8 +6,6 @@ import rozopay from '../../icons/Rozorpay.png'
 function MainRight() {
 
   const val=useRef()
-
- 
 
   return (
     <div className="main__plan">
