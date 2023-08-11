@@ -1,11 +1,34 @@
-import React, {  useRef } from "react";
+import React, { useState } from "react";
 import "./MainRight.css";
 import clock from '../../icons/icon clock.svg'
 import rozopay from '../../icons/Rozorpay.png'
 
 function MainRight() {
 
-  const val=useRef()
+  const [price,setPrice]=useState()
+  const [val,setValue]=useState("- ₹ 0")
+  const [curVal,setCurVal]=useState(0)
+
+ const onChangePlans=(e)=>{
+  const checked=e.target.value
+console.log(checked)
+  setPrice(checked)
+  
+  if(checked==="149"){
+    setValue("- ₹ 18,151")
+    setCurVal(149)
+   }
+   else if(checked==="99"){
+  setValue("- ₹ 18,101")
+  setCurVal(99)
+   }else{
+  setValue("- ₹ 18,121")
+  setCurVal(179)
+   }
+  //  console.log(price)
+ }
+
+
 
   return (
     <div className="main__plan">
@@ -36,21 +59,21 @@ function MainRight() {
       </div>
       <div className="all__activeplans"  >
         <div className="first__part">
-        <input type='radio' id='plan1' name='radio__btns'  className='all__checkbox' />
+        <input type='radio' id='plan1' onChange={onChangePlans} name='radio__btns'  value='179' className='all__checkbox' checked={price==='179'}/>
           <div className="duration__path" >
             <span style={{backgroundColor:'green'}}>Recommended</span>
            <p>12 Months Subscription</p>
           </div>
         </div>
         <p>
-          Total<span ref={val}> ₹179 </span>
+          Total<span> ₹179 </span>
           <br />
           ₹15 /mo
         </p>
       </div>
       <div className="all__activeplans">
         <div className="first__part">
-        <input type='radio' id='plan2' name='radio__btns'  className='all__checkbox' />
+        <input type='radio' id='plan2' onChange={onChangePlans} name='radio__btns' value='149' className='all__checkbox' checked={price==='149'} />
           <div style={{marginTop:'20px'}} className="duration__path">
             <p >6 Months Subscription</p>
           </div>
@@ -63,7 +86,7 @@ function MainRight() {
       </div>
       <div className="all__activeplans" type='radio'  >
         <div className="first__part">
-            <input type='radio' id='plan3' name='radio__btns'  className='all__checkbox' />
+            <input type='radio' id='plan3' onChange={onChangePlans} name='radio__btns' value='99'  className='all__checkbox' checked={price==='99'} />
           <div style={{marginTop:'20px'}} className="duration__path">
             <p >3 Months Subscription</p>
           </div>
@@ -88,12 +111,12 @@ function MainRight() {
                 <p>Offer Valid till 25th March 2023</p>
             </div>
             </div>
-            <p className="price--discount">{}</p>
+            <p className="price--discount">{val}</p>
         </div>
       </div>
       <div className="total__price">
         <p>Total (Incl. of 18% GST)</p>
-        <p>{}</p>
+        <h2>₹ {curVal}</h2>
       </div>
       <div className="plans__btns">
         <button style={{color:'red',border:'1px solid red'}} className="btn__prop">
